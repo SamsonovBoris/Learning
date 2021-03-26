@@ -29,7 +29,7 @@ namespace Lesson03_02
                 {
                     System.Console.Write($"{TelephoneBook[i, j]} ");
                 }
-                System.Console.WriteLine();
+                //System.Console.WriteLine();
             }
 
         }

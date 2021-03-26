@@ -9,17 +9,13 @@ namespace Lesson03_03
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите текст:");
-            string source = Convert.ToString(Console.Read());
+            Console.Write("Введите текст: ");
+            string text = Console.ReadLine();
 
-            //string source = "abcd";
-            for (int index = source.Length - 1; index >= 0; --index)
+            for (int x = text.Length - 1; x >= 0; x--)
             {
-                Console.Write(source[index]);
+                Console.Write(text[x]);
             }
-            // выведет dcba
-
-
         }
     }
 }

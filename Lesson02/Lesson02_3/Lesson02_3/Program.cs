@@ -9,7 +9,7 @@ namespace Lesson02_3
         static void Main(string[] args)
         {
             Console.Write("Введите число: ");
-            int number = int.Parse(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
 
             if (number % 2 == 0)
             {

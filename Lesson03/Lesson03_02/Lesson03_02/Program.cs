@@ -8,9 +8,7 @@ namespace Lesson03_02
         static void Main(string[] args)
         {
             string[,] TelephoneBook = new string[5, 2];
-
-            
-            //string str = Convert.ToString(TelephoneBook[0, 0]);
+                                   
              TelephoneBook[0, 0] = "Василий Цой  ";
              TelephoneBook[1, 0] = "Сергей Дзюба ";
              TelephoneBook[2, 0] = "Анна Иванова ";
@@ -29,7 +27,7 @@ namespace Lesson03_02
                 {
                     System.Console.Write($"{TelephoneBook[i, j]} ");
                 }
-                //System.Console.WriteLine();
+                System.Console.WriteLine();
             }
 
         }

@@ -1,52 +1,31 @@
-﻿using System;
+﻿/*	Написать метод GetFullName(string firstName, string lastName, string patronymic),  
+    принимающий на вход ФИО в разных аргументах и возвращающий объединённую строку с ФИО.
+    Используя метод, написать программу, выводящую в консоль 3–4 разных ФИО.  */
+
+using System;
 
 namespace Lesson04_01
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            string[] array = { "One", "Two", "Three" };
-            string[] replacedByRef = ReplaceArrayByRef(ref array);
-            string[] replaced = ReplaceArray(array);
-
-            Console.WriteLine("array: ");
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < 3; i++)
             {
-                Console.Write($"- {array[i]} ");
-            }
-            Console.WriteLine();
+                Console.WriteLine("Введите вашу фамилию: ");
+                string lastName = Console.ReadLine();
+                Console.WriteLine("Введите ваше имя: ");
+                string firstName = Console.ReadLine();
+                Console.WriteLine("Введите ваше отчество: ");
+                string patronymic = Console.ReadLine();
 
-            Console.WriteLine("replaced: ");
-            for (int i = 0; i < replaced.Length; i++)
-            {
-                Console.Write($"{replaced[i]} ");
+                string fio = GetFullName(lastName, firstName, patronymic);
+                Console.WriteLine($"Полное имя пользователя {fio}");
             }
-            Console.WriteLine();
-
-            Console.WriteLine("replacedByRef: ");
-            for (int i = 0; i < replacedByRef.Length; i++)
-            {
-                Console.Write($"{replacedByRef[i]} ");
-            }
-            Console.WriteLine();
         }
-
-        static string[] ReplaceArray(string[] data)
+        static string GetFullName(string lastName, string firstName, string patronymic)
         {
-            data = new[] { "replaced", "replaced", "replaced" };
-            return data;
+            return $"{lastName} {firstName} {patronymic}";
         }
-
-        static string[] ReplaceArrayByRef(ref string[] data)
-        {
-            data = new[] { "ref", "ref", "ref" };
-            return data;
-        }
-
-
     }
-
 }
-

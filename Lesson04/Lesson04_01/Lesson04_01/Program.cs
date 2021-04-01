@@ -18,7 +18,7 @@ namespace Lesson04_01
                 string firstName = Console.ReadLine();
                 Console.WriteLine("Введите ваше отчество: ");
                 string patronymic = Console.ReadLine();
-
+                
                 string fio = GetFullName(lastName, firstName, patronymic);
                 Console.WriteLine($"Полное имя пользователя {fio}");
             }
@@ -28,4 +28,4 @@ namespace Lesson04_01
             return $"{lastName} {firstName} {patronymic}";
         }
     }
-}
+} 

@@ -10,36 +10,36 @@ using System;
 
 namespace Lesson04_03
 {
-         enum Seasons
-         {
-            Winter = 1,
-            Spring,
-            Summer,
-            Autumn
-         }
+    enum Seasons
+    {
+        Winter = 1,
+        Spring,
+        Summer,
+        Autumn
+    }
 
-         enum Months
-         {
-            Jan = 1,
-            Feb,
-            Mar,
-            Apr,
-            May,
-            Jun,
-            Jul,
-            Aug,
-            Sep,
-            Oct,
-            Nov,
-            Dec
-         }
+    enum Months
+    {
+        Jan = 1,
+        Feb,
+        Mar,
+        Apr,
+        May,
+        Jun,
+        Jul,
+        Aug,
+        Sep,
+        Oct,
+        Nov,
+        Dec
+    }
 
     class Program
-    { 
-           static void Main(string[] args)
-           {
-               string month_string;
-               int month_num;
+    {
+        static void Main(string[] args)
+        {
+            string month_string;
+            int month_num;
 
             Console.Write("Введите номер месяца: ");
             month_string = Console.ReadLine();
@@ -48,7 +48,7 @@ namespace Lesson04_03
             if (month_num < 1 || month_num > 12)
                 Console.WriteLine("Введите значение от 1 до 12");
             else
-                switch(month_num)
+                switch (month_num)
                 {
                     case 1:
                         Console.WriteLine("Сейчас зима");
@@ -87,7 +87,7 @@ namespace Lesson04_03
                         Console.WriteLine("Сейчас осень");
                         break;
                 }
-           } 
-        
+        }
+
     }
 }

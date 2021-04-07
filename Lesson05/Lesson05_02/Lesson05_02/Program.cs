@@ -1,12 +1,19 @@
-﻿using System;
+﻿// Написать программу, которая при старте дописывает текущее время в файл «startup.txt».
 
-namespace Lesson05_02
+using System.IO;
+using System;
+
+namespace HelloWorld
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            DateTime GetNowTime = DateTime.Now;
+            string stringTime = Convert.ToString(GetNowTime);
+            string fileName = "startup.txt";
+            
+            File.AppendAllLines(fileName, new[] {stringTime});
         }
     }
 }
